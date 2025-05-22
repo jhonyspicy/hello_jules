@@ -1,0 +1,68 @@
+/* Keep existing Create React App styles if desired, or remove/comment them */
+/* For this task, we'll focus on adding the new styles */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center; /* Existing from CRA, kept for general centering */
+}
+
+.game-status-display {
+  margin: 20px;
+  font-size: 1.2em;
+  text-align: center; /* Explicitly set for this component */
+}
+
+/* General button styling, will apply to the New Game button in App.tsx */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* Default CRA styles (optional, can be removed or modified) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh; /* This will likely be overridden by game content taking space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
