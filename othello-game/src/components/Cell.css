@@ -1,0 +1,29 @@
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cell-empty:hover {
+  background-color: #f0f0f0;
+}
+
+.piece {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.cell-black {
+  background-color: black;
+}
+
+.piece.cell-white {
+  background-color: white;
+  border: 1px solid #ccc;
+}

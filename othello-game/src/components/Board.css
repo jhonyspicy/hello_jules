@@ -1,0 +1,16 @@
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* Cell width from Cell.css */
+  grid-template-rows: repeat(8, 50px);    /* Cell height from Cell.css */
+  width: fit-content;
+  border: 2px solid #000;
+  background-color: #2a8c2a; /* Classic green board color */
+  /* The .board-row class is not strictly necessary with this grid setup */
+  /* but if Board.tsx uses it, we can add styles for it. */
+  /* For now, assuming direct cell rendering under .game-board */
+}
+
+/* If Board.tsx explicitly creates .board-row divs: */
+.board-row {
+  display: contents; /* This makes the .board-row behave as if its children are direct children of the grid */
+}
